@@ -1,0 +1,21 @@
+1 -SELECT nome_bebida FROM bebidas
+GROUP BY (nome_bebida) ASC
+2 -SELECT nome_bebida FROM bebidas
+GROUP BY (nome_bebida) DESC
+3 -SELECT nome_bebida FROM bebidas WHERE nome_bebida != 'Blue Moon'
+4 -SELECT UPPER(nome_bebida) FROM bebidas
+5 -SELECT nome_bebida FROM bebidas WHERE qtd1 > qtd2
+6 -SELECT MIN(qtd1), SUM(qtd1)/COUNT(qtd1), MAX(qtd1),MIN(qtd2), SUM(qtd2)/COUNT(qtd2), MAX(qtd2) FROM bebidas
+7 - SELECT nome_bebida FROM bebidas WHERE nome_bebida LIKE "B%"
+8 -SELECT nome_bebida, preco FROM info_bebidas WHERE preco BETWEEN 3.00 and 4.00
+GROUP BY (preco) DESC
+9 -SELECT nome_bebida FROM info_bebidas WHERE calorias > 50 AND gelo = 'Y'
+10 -SELECT SUM(preco)/COUNT(preco), SUM(carboidratos)/COUNT(carboidratos), SUM(calorias)/COUNT(calorias) 
+FROM info_bebidas 
+11 -SELECT cor, SUM(preco)/COUNT(preco), SUM(carboidratos)/COUNT(carboidratos), SUM(calorias)/COUNT(calorias)
+FROM info_bebidas
+GROUP BY cor
+12 -SELECT nome_bebida, carboidratos, preco FROM info_bebidas WHERE carboidratos < 5 OR preco < 3
+13 -SELECT nome_bebida FROM bebidas WHERE nome_bebida LIKE "L%"
+14 -SELECT nome_bebida FROM info_bebidas WHERE carboidratos IS NULL OR calorias IS NULL
+15 -
