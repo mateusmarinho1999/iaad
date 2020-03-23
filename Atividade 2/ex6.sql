@@ -1,0 +1,1 @@
+SELECT MIN(qtd1), SUM(qtd1)/COUNT(qtd1), MAX(qtd1),MIN(qtd2), SUM(qtd2)/COUNT(qtd2), MAX(qtd2) FROM bebidas
