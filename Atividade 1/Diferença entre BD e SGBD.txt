@@ -1,0 +1,3 @@
+Banco de dados é um conjuto de dados agrupados que podem ou não ter relações entre si.
+Ja os sistemas de gerenciamento de banco de dados, são ferramentes que auxiliam o gerenciamento
+desses dados.
